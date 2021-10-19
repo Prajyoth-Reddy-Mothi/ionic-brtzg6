@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Netizen </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- Colors -->
+  <button ion-button color="primary">Stores</button>
+  <button ion-button color="secondary">Food</button>
+  <button ion-button color="danger">Ride</button>
+  <button ion-button color="dark">Services</button>
+</ion-content>
+<ion-content padding>
+  <div ng-app="myApp" ng-controller="datCtrl">
+    <h2>Trending in Hanamkonda</h2>
+
+    <ion-card>
+      <ion-img
+        id="img"
+        width="450px"
+        height="300px"
+        src="https://source.unsplash.com/random"
+      ></ion-img>
+      <ion-card-header>
+        <ion-chip>
+          <ion-icon name="pin" color="primary"></ion-icon>
+          <ion-label>RTO office Warangal</ion-label>
+        </ion-chip>
+        <ion-card-title text-wrap
+          >Government jobs in Warangal to check out right now</ion-card-title
+        >
+      </ion-card-header>
+      <ion-card-content>
+        Here’s a small text description for the card component. Nothing more,
+        nothing less.
+
+        <ion-item padding>
+          <button padding ion-button fill="solid">Read more</button>
+          <ion-icon padding name="thumbs-up" fill="solid" slot="end"
+            >14</ion-icon
+          >
+          <ion-icon name="thumbs-down" slot="end">21</ion-icon>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<link
+  rel="preload"
+  href="home/home.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript><link rel="stylesheet" href="home/home.css" /></noscript>
